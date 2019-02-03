@@ -1,4 +1,4 @@
-(defproject hellworld "0.1.0-SNAPSHOT"
+(defproject helloworld "0.1.0-SNAPSHOT"
   :description "helloworld"
   :url "helloworld"
   :license {:name "Eclipse Public License"

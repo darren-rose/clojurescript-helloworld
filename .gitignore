@@ -2,3 +2,4 @@
 target
 *.iml
 resources/public/js
+.lein-failures
