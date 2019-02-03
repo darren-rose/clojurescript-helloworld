@@ -19,7 +19,7 @@
                         :compiler {
                                    :output-to "resources/public/js/prod.js"
                                    :output-dir "resources/public/js/cljs-prod/"
-                                   :optimizations :whitespace
+                                   :optimizations :advanced
                                    :pretty-print false}}
                        ]
               }
