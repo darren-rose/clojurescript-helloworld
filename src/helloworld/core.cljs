@@ -3,17 +3,23 @@
 
 (def app-state
   (reagent/atom {
-                 :message "clicks"
+                 :inc-message "click me to increment"
+                 :dec-message "click me to decrement"
                  :clicks 0
                  }))
 
-(defn clickable [message]
+(defn incrementer [message]
   [:div {}
    [:div {:on-click (fn [] (swap! app-state assoc-in [:clicks] (+ (:clicks @app-state) 1) ))} message]])
 
+(defn decrementer [message]
+  [:div {}
+   [:div {:on-click (fn [] (swap! app-state assoc-in [:clicks] (- (:clicks @app-state) 1) ))} message]])
+
 (defn app []
   [:div {:class "app"}
-   [clickable (:message @app-state)]
+   [incrementer (:inc-message @app-state)]
+   [decrementer (:dec-message @app-state)]
    [:div {} (:clicks @app-state)]
    ]
   )
