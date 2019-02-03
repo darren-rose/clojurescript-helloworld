@@ -1,4 +1,4 @@
-(ns hellworld.core-test
+(ns helloworld.core-test
   (:require [clojure.test :refer :all]
             [hellworld.core :refer :all]))
 

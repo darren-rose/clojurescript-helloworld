@@ -1,10 +1,10 @@
-# hellworld
+# helloworld
 
 a journey into Clojure and Clojurescript using Leiningen
 
 ### Development
 
-run
+build and watch for changes
 
 ```
 lein cljsbuild auto dev

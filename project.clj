@@ -1,10 +1,10 @@
 (defproject hellworld "0.1.0-SNAPSHOT"
-  :description "hellworld"
+  :description "helloworld"
   :url "helloworld"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :main hellworld.core
+  :main helloworld.core
 
   :cljsbuild {:builds [
                        {:id "dev"
